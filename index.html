@@ -150,11 +150,21 @@
         </main>
     </body>
     <script type="text/javascript">
+        const getParams = () => {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const source = urlParams.get('utm_source');
+            const target = urlParams.get('target');
+            return [source, target];
+        };
         document.getElementById('spotify').addEventListener(
             'click',
             function () {
+                const params = getParams();
                 fbq('track', 'ViewContent', {
                     value: 'spotify',
+                    source: params[0],
+                    target: params[1],
                 });
             },
             false
@@ -162,8 +172,11 @@
         document.getElementById('instagram').addEventListener(
             'click',
             function () {
+                const params = getParams();
                 fbq('track', 'ViewContent', {
                     value: 'instagram',
+                    source: params[0],
+                    target: params[1],
                 });
             },
             false
@@ -171,8 +184,11 @@
         document.getElementById('soundcloud').addEventListener(
             'click',
             function () {
+                const params = getParams();
                 fbq('track', 'ViewContent', {
                     value: 'soundcloud',
+                    source: params[0],
+                    target: params[1],
                 });
             },
             false
