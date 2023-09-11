@@ -5,6 +5,7 @@ main {
     height: 100%;
     background-color: black;
     color: white;
+    margin: 0;
 }
 
 main {
@@ -33,7 +34,7 @@ main {
 
 @media screen and (min-width: 600px) {
     .title {
-        font-size: 200px;
+        font-size: 150px;
     }
 }
 
@@ -48,15 +49,18 @@ main {
 
 @media screen and (min-width: 600px) {
     .code {
-        font-size: 48px;
+        font-size: 42px;
     }
 }
 
 .links {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    gap: 24px;
+    gap: 12px;
+    width: 100%;
+    padding: 36px 36px 0 36px;
+    box-sizing: border-box;
 
     font-size: 18px;
     font-family: sans-serif;
@@ -64,21 +68,33 @@ main {
 
 @media screen and (min-width: 600px) {
     .links {
-        gap: 36px;
-        font-size: 24px;
+        gap: 12px;
+        max-width: 600px;
+        padding-top: 18px;
+        font-size: 20px;
     }
 }
 
 .link {
     display: flex;
     align-items: center;
-    gap: 8px;
+    width: auto;
     color: white;
     text-decoration: none;
+    background-color: #333;
+    border-radius: 4px;
+    padding: 20px 16px;
+    min-width: 200px;
+}
+
+.link > span {
+    flex-grow: 1;
+    text-align: center;
+    margin-left: -32px;
 }
 
 .hover {
-    transition: color 0.5s ease;
+    transition: color 0.25s ease;
 }
 
 .hover.cyan:hover {
@@ -87,4 +103,18 @@ main {
 
 .hover.pink:hover {
     color: magenta;
+}
+
+.link.hover:hover {
+    color: white;
+    background-color: #444;
+    transition: background-color 0.25s ease;
+}
+
+#spotify {
+    background-color: #1db954;
+}
+
+#spotify.hover:hover {
+    background-color: rgb(46, 221, 107);
 }
