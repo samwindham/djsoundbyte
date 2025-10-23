@@ -1,189 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta
-            name="description"
-            content="DJ Sound Byte | Dallas, TX | Follow me on Instagram: @djsoundbyte"
-        />
-        <title>Sound Byte</title>
-        <link rel="stylesheet" href="./index.css" />
-        <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
-            rel="stylesheet"
-        />
-        <!-- Meta Pixel Code -->
-        <script>
-            !(function (f, b, e, v, n, t, s) {
-                if (f.fbq) return;
-                n = f.fbq = function () {
-                    n.callMethod
-                        ? n.callMethod.apply(n, arguments)
-                        : n.queue.push(arguments);
-                };
-                if (!f._fbq) f._fbq = n;
-                n.push = n;
-                n.loaded = !0;
-                n.version = '2.0';
-                n.queue = [];
-                t = b.createElement(e);
-                t.async = !0;
-                t.src = v;
-                s = b.getElementsByTagName(e)[0];
-                s.parentNode.insertBefore(t, s);
-            })(
-                window,
-                document,
-                'script',
-                'https://connect.facebook.net/en_US/fbevents.js'
-            );
-            fbq('init', '712576090703400');
-        </script>
-        <!-- End Meta Pixel Code -->
-    </head>
-    <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-73PQE6ZKWT"
-    ></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-73PQE6ZKWT');
-    </script>
-    <body>
-        <main>
-            <div class="code">
-                <div>
-                    <span class="hover pink">0101</span>
-                    <span class="hover pink">0011</span>
-                    <span class="hover pink">0100</span>
-                    <span class="hover pink">0010</span>
-                </div>
-            </div>
-            <h1 class="title">
-                <span>
-                    <span class="hover cyan">S</span
-                    ><span class="hover cyan">O</span
-                    ><span class="hover cyan">U</span
-                    ><span class="hover cyan">N</span
-                    ><span class="hover cyan">D</span>
-                </span>
-                <span>
-                    <span class="hover pink">B</span
-                    ><span class="hover pink">Y</span
-                    ><span class="hover pink">T</span
-                    ><span class="hover pink">E</span>
-                </span>
-            </h1>
-            <div class="code">
-                <div>
-                    <span class="hover cyan">0101</span>
-                    <span class="hover cyan">0011</span>
-                    <span class="hover cyan">0100</span>
-                    <span class="hover cyan">0010</span>
-                </div>
-            </div>
-            <div class="links">
-                <a
-                    href="https://www.instagram.com/djsoundbyte/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="link hover cyan"
-                    id="instagram"
-                >
-                    <img
-                        src="./assets/img-instagram.svg"
-                        alt="instagram"
-                        height="32"
-                        width="32"
-                    />
-                    <span>Instagram</span>
-                </a>
-                <a
-                    href="https://soundcloud.com/djsoundbyte"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="link hover pink"
-                    id="soundcloud"
-                >
-                    <img
-                        src="./assets/img-soundcloud.svg"
-                        alt="sound cloud"
-                        height="32"
-                        width="32"
-                    />
-                    <span>SoundCloud</span>
-                </a>
-                <a
-                    href="https://open.spotify.com/artist/30cRJkFS7EL7vikD9XzllM"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="link hover cyan"
-                    id="spotify"
-                >
-                    <img
-                        src="./assets/img-spotify.svg"
-                        alt="spotify"
-                        height="32"
-                        width="32"
-                    />
-                    <span>Spotify</span>
-                </a>
-            </div>
-        </main>
-    </body>
-    <script type="text/javascript">
-        const getParams = () => {
-            const queryString = window.location.search;
-            const urlParams = new URLSearchParams(queryString);
-            const source = urlParams.get('utm_source');
-            const target = urlParams.get('target');
-            return [source, target];
-        };
-        document.getElementById('spotify').addEventListener(
-            'click',
-            function () {
-                const params = getParams();
-                fbq('track', 'ViewContent', {
-                    value: 'spotify',
-                    source: params[0],
-                    target: params[1],
-                });
-            },
-            false
-        );
-        document.getElementById('instagram').addEventListener(
-            'click',
-            function () {
-                const params = getParams();
-                fbq('track', 'ViewContent', {
-                    value: 'instagram',
-                    source: params[0],
-                    target: params[1],
-                });
-            },
-            false
-        );
-        document.getElementById('soundcloud').addEventListener(
-            'click',
-            function () {
-                const params = getParams();
-                fbq('track', 'ViewContent', {
-                    value: 'soundcloud',
-                    source: params[0],
-                    target: params[1],
-                });
-            },
-            false
-        );
-    </script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="DJ Sound Byte | Dallas, TX | Follow me on Instagram: @djsoundbyte"
+    />
+    <title>Sound Byte</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Michroma&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="header"></div>
+      <div class="banner">
+        <div class="banner-image">
+          <img src="./assets/local/banner.jpg" width="100%" height="auto" />
+        </div>
+        <div class="title">
+          <img
+            src="./assets/local/inline-white-shadow.png"
+            width="100%"
+            height="auto"
+          />
+        </div>
+      </div>
+      <div class="container">
+        <div class="about">
+          <p>
+            Sound Byte creates emotional drum and bass rooted in contrast -
+            cinematic tension, melancholic textures, and high-energy drops that
+            feel like release. With a background in classical piano and a mind
+            wired for the future, Sound Byte builds sonic worlds where
+            vulnerability meets velocity.
+          </p>
+        </div>
+        <div class="shows">
+          <h2 class="label">SHOWS</h2>
+          <p>
+            <span style="margin-right: 36px">8/23/25</span>
+            <a
+              style="color: #fd34a9"
+              href="https://www.eventbrite.com/e/drum-bass-sessions-823-tickets-1571874411679"
+              >DALLAS, TX - Greenlight Social (DNB Sessions)</a
+            >
+          </p>
+          <p>
+            <span style="margin-right: 36px">9/20/25</span>
+            <a
+              style="color: #fd34a9"
+              href="https://soundersdallas.com/blogs/news/dallas-drum-bass-takeover-9-20-sounders"
+              >DALLAS, TX - Sounders (DNB Takeover)</a
+            >
+          </p>
+          <p>
+            <span style="margin-right: 24px">10/25/25</span>
+            <a
+              style="color: #fd34a9"
+              href="https://www.eventbrite.com/e/drum-bass-sessions-1025-one-year-aniv-tickets-1748980400459"
+              >DALLAS, TX - Greenlight Social (DNB Sessions)</a
+            >
+          </p>
+        </div>
+        <div class="widgets">
+          <h2 class="label">RELEASES</h2>
+          <iframe
+            data-testid="embed-iframe"
+            style="border-radius: 12px; margin-bottom: 16px"
+            src="https://open.spotify.com/embed/track/4prr755U4C0M0qYzZAssgV?utm_source=generator&theme=0"
+            width="100%"
+            height="152"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+          <iframe
+            data-testid="embed-iframe"
+            style="border-radius: 12px; margin-bottom: 16px"
+            src="https://open.spotify.com/embed/track/0dqLsudwz2yT8FVS3KhFOC?utm_source=generator&theme=0"
+            width="100%"
+            height="152"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+          <iframe
+            width="100%"
+            height="152"
+            style="margin-bottom: 16px"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2111181789&color=%23ff5500&auto_play=true&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false"
+          ></iframe>
+          <iframe
+            width="100%"
+            height="152"
+            style="margin-bottom: 16px"
+            scrolling="no"
+            frameborder="no"
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2119403487&color=%23ff5500&auto_play=true&hide_related=true&show_comments=true&show_user=true&show_reposts=false&show_teaser=false"
+          ></iframe>
+        </div>
+        <div class="contact">
+          <h2 class="label">CONTACT</h2>
+          <p>
+            <span style="margin-right: 60px">Email</span
+            ><a href="mailto:contact@djsoundbyte.com" style="color: #fd34a9"
+              >contact@djsoundbyte.com</a
+            >
+          </p>
+          <p>
+            <span style="margin-right: 48px">Spotify</span
+            ><a
+              href="https://open.spotify.com/artist/30cRJkFS7EL7vikD9XzllM"
+              style="color: #fd34a9"
+              >Sound Byte</a
+            >
+          </p>
+          <p>
+            <span style="margin-right: 24px">Instagram</span
+            ><a
+              href="https://open.spotify.com/artist/30cRJkFS7EL7vikD9XzllM"
+              style="color: #fd34a9"
+              >@soundbyte.music</a
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
